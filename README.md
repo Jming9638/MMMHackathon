@@ -45,7 +45,7 @@ Follow these steps to install the necessary tools and libraries for the MMM anal
 ### Step 2: Install packages
 Robyn requires several packages to function. Open RStudio and run the following commands:
 
-```R
+```r
 # Install latest stable CRAN version
 install.packages("Robyn", repos="https://cran.rstudio.com/")
 
@@ -59,7 +59,7 @@ remotes::install_github("facebookexperimental/Robyn/R")
 
 ### Step 3: Python Packages Installation
 Robyn integrated with the Python library Nevergrad for advanced optimization. Follow these steps:
-```R
+```r
 # Copyright (c) Meta Platforms, Inc. and its affiliates.
 
 # This source code is licensed under the MIT license found in the
@@ -111,7 +111,7 @@ py_install("nevergrad", pip = TRUE)
 ### Step 4: Verify Installation
 Run the following commands in RStudio to check if Robyn is properly installed:
 
-```R
+```r
 library(Robyn)
 
 # Check Robyn version
@@ -134,7 +134,7 @@ Once installation is complete, follow these steps to run the MMM analysis using 
 2. Save the data as a CSV or RDS file for easy access.
 
 ### Step 2: Load Robyn and Your Data
-```R
+```r
 library(Robyn)
 
 # Load your dataset
@@ -148,7 +148,7 @@ robyn_object <- robyn_inputs(
 ```
 
 ### Step 3: Run the Model
-```R
+```r
 # Run the MMM
 model_results <- robyn_run(robyn_object)
 
